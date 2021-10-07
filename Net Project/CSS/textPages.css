@@ -1,0 +1,29 @@
+body{
+	margin: 0px;
+}
+
+div{
+	margin-left: 20px
+}
+
+p{
+	max-width: 1000px;
+	max-height: 1000px;
+}
+
+img{
+	max-width: 500px;
+	max-height: 500px;
+}
+
+.sticky{
+	position: fixed;
+	top: 0;
+}
+
+#SearchBar{
+	width: 100%;
+	background-color: grey;
+	padding: 5px;
+	margin: 0px; 
+}

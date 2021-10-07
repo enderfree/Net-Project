@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<title>Registration page</title>
+		<link rel="stylesheet" href="../CSS/style.css"/>
+		<style>
+			form{
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				-ms-transform: translate(-50%, -50%); <!--thx W3School-->
+				transform: translate(-50%, -50%);
+				border: dotted black 1px;
+			}
+		</style>
+	</head>
+	<body>
+		<form>
+			<table>
+				<tr>
+					<td><label for="UserName">User name: </label></td>
+					<td><input name="UserName" id="UserName" Type="text"/></td>
+				</tr>
+				<tr>
+					<td><label for="Password">Password: </label></td>
+					<td>
+						<input name="Password" id="Password" Type="text"> <!--Type text instead of password to see it as asked when you type it-->
+						<button onclick="Register()">Register</button>
+					</td>
+				</tr>
+			</table>
+		</form>
+		
+		<script src="../JS/LoginAndRegistration.js"></script>
+	</body>
+</html>

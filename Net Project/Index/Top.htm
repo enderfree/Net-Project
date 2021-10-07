@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="iso-8859-15"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" 
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<!-- 
+	Samuel Fauteux
+	03/31/2021
+	-->
+	<head>
+		<title>Titre</title>
+		<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=iso-8859-15" />
+		<link rel="stylesheet" href="..\CSS\style.css"/>
+		<link rel="stylesheet" href="..\CSS\indexStyle.css"/>
+	</head>
+	<body>
+		<table>
+			<tr>
+				<td>
+					<img src="../Images/LogoTransparentBG2.PNG" alt="The wind spreader comunity"/>
+				</td>
+				<td><h1>Web Client Development</h1></td>
+				<td>
+					<form action="">
+						<table>
+							<tr>
+								<td><label for="UserName">User name: </label></td>
+								<td><input name="UserName" id="UserName" type="text"/></td>
+							</tr>
+							<tr>
+								<td><label for="Password">Password: </label></td>
+								<td>
+									<input name="Password" id="Password" type="password"/>
+									<input type="button" onclick="Login()" value="Login"/>
+								</td>
+							</tr>
+						</table>
+					</form>
+				</td> 
+			</tr>
+		</table>
+		
+		<script type="text/javascript">
+			var defaultUserName = "Samuel@proj.ca";
+			var defaultPassword = 123;
+		
+			function OpenRegistrationPage(){
+				//window.open("../Pages/Register.htm", Content_Frame)
+				//document.getElementById('')
+				//$link = $('a#RegistrationLink');
+				//$link.click();
+				parent.frames.Content_Frame.location.href = "../Pages/Register.htm"; //won't work on firefox
+				//window.parent.frame[2].location.href = "../Pages/Register.htm";
+			}
+		
+			function Login(){
+				try{
+					var userName = document.getElementById('UserName').value;
+					var password = document.getElementById('Password').value;
+					
+					var cookies = document.cookie.split(";");
+					
+					for(var i = 0; i < cookies.length; ++i){
+						alert(cookies[i].toString());
+						
+						if (cookies[i].toString() == userName + "=" + password || (userName == defaultUserName && password == defaultPassword)){
+							parent.frames.Menu_Frame.$("a").attr('href');
+						}
+						else{
+							OpenRegistrationPage();
+							alert(cookies[i].toString());
+						}
+					}
+				}
+				catch(e){
+					OpenRegistrationPage();
+				}
+			}
+		</script>
+	</body>
+</html>

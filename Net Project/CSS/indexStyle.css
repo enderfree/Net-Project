@@ -1,0 +1,87 @@
+html, body{
+	height: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+
+table{
+	width: 100%;
+}
+
+a{
+	display: block;
+}
+
+img{
+	max-height: 5em;
+}
+
+td h1{
+	float: right;
+}
+
+h1, p, td{
+	text-align: center;
+}
+
+form table{
+	max-width: 20em;
+	float: right;
+}
+
+label{
+	float: right;
+}
+
+input{
+	float: left;
+}
+
+
+
+div, h3{
+	margin: 0px;
+	padding: 0px;
+}
+
+iframe{
+	/*
+	align: right;
+	float: right;
+	width: 100%;
+	height: 100vh;
+	display: table-cell;
+	border: none;
+	*/
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    float: left;
+    
+}
+
+#Top{
+	width: 100%;
+	height: 20%; 
+	border-bottom: solid black 5px;
+}
+
+#Menu{
+	width: 10%;
+	height: 100vh;
+	display: table-cell;
+	border-right: solid black 5px;
+}
+
+#Menu h5{
+	padding-right: 5em;
+}
+
+#Menu a, #Menu h5{
+	padding-left: 20px;
+}
+
+#Content{
+	display: table-cell;
+	width: 100%;
+}

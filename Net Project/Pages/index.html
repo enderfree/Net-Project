@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="iso-8859-15"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<!-- Samuel, Fauteux 
+		 Description: an alternative version of my index page because I am 
+			tiered of all the complication caused by the frames
+		 Date: 04/16/2021                 -->
+		<title>The wind spreader comunity</title>
+		<link rel="icon" type="image/png" href="../Images/LogoTransparentBG2.PNG"/>
+		<link rel="stylesheet" href="../CSS/style.css"/>
+		<link rel="stylesheet" href="../CSS/indexStyle.css"/>
+	</head>
+	<body onload="HideTheMenu()">
+		<div id="Top">
+			<table>
+				<tr>
+					<td>
+						<img src="../Images/LogoTransparentBG2.PNG" alt="The wind spreader comunity"/>
+					</td>
+					<td><h1>The wind spreader's comunity</h1></td>
+					<td>
+						<form action="">
+							<table>
+								<tr>
+									<td><label for="UserName">User name: </label><h3>Welcome</h3></td>
+									<td><input name="UserName" id="UserName" type="text"/></td>
+								</tr>
+								<tr>
+									<td><label for="Password">Password: </label><h3 id="User"><h3></td>
+									<td>
+										<input name="Password" id="Password" type="password"/>
+										<input type="button" onclick="Login()" value="Login" id="Loging"/>
+										<input type="button" onclick="Logout()" value="Logout" id="Logingout"/>
+									</td>
+								</tr>
+							</table>
+						</form>
+					</td> 
+				</tr>
+			</table>
+		</div>
+		<div id="Menu">
+			<h5>Menu</h5>
+			<hr/>
+			<a href="../Index/Content.htm" target="content">Home</a>
+			<a href="Opening.html" target="content">Opening</a>
+			<a href="Lovecraft Country Map.html" target="content">Map</a>
+			<a href="Info.html" target="content">Big Cities</a>
+			<a href="Subscription.html" target="content">Subscribe</a>
+			<a href="Bibliography.html" target="content">Bibliography</a>
+		</div>
+		<div id="Content">
+		<!--
+			<h1>Welcome to the wind spreader comunity website</h1>
+			<p>
+				This website has been created to talk about the big cities 
+				mentionned by Lovecraft in is work to help you know where things are 
+				appening and how ample the consequances are. 
+			</p>
+			-->
+			<iframe src="../Index/Content.htm" name="content" title="PageContent"></iframe>
+		</div>
+		
+		<script type="text/javascript" src="../JS/jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" src="../JS/LoginAndRegistration.js"></script>
+	</body>
+</html>

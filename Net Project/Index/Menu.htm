@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<!-- 
+		Samuel, Fauteux
+		03/31/2021
+	-->
+	 <head>
+		  <title>Menu</title>
+		  <link rel="stylesheet" href="..\CSS\style.css"/>
+		  <link rel="stylesheet" href="..\CSS\indexStyle.css"/>
+	 </head>
+	 <body onload="HideTheMenu()">
+		<h5>Menu</h5>
+		<hr/>
+		<a href="Content.htm" target="Content_Frame">Home</a>
+		<a href="../Pages/Register.htm" target="Content_Frame">Register</a>
+		<a href="../Pages/Opening.html" target="Content_Frame">Opening</a>
+		<a href="../Pages/Lovecraft Country Map.html" target="Content_Frame">Map</a>
+		<a href="../Pages/Info.html" target="Content_Frame">Big Cities</a>
+		<a href="../Pages/Subscription.html" target="Content_Frame">Subscribe</a>
+		<a href="../Pages/Bibliography.html" target="Content_Frame">Bibliography</a>
+		
+		<script type="text/javascript" src="../JS/jquery-3.4.1.min.js"></script>
+		<script type="text/javascript">
+			function HideTheMenu(){
+				$(document).ready(function(){ 
+					$("a").removeAttr('href');    
+				});
+			}
+		</script>
+	 </body>
+</html>
